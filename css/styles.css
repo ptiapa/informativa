@@ -1,0 +1,159 @@
+
+/*----------------Body ---------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*----------------Menu ---------------------*/
+
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#local{ 
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+}
+
+/*----------------Slider---------------------*/
+
+.carousel-inner{
+    max-height: 39rem;   
+}
+
+.mapa{
+    background-image: url(../img/mapa.png);
+    width: 100%;
+    height: 500px;
+}
+
+#bg-contacto{
+    position: relative;
+    top: -130px;
+}
+
+#seccion-contacto{
+    background-color: #1b2a43;
+    min-height: 500px;
+    position: relative;
+    margin-top: -200px;
+}
+
+#contenedor-formulario{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50% -50%);
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    max-width: 500px;
+
+}
+
+#titulo-formulario{
+    color: #1b2a43;
+}
+
+.boton{
+    border: 1px solid #1b2a43;
+}
+
+footer{
+    margin-top: 40px;
+    min-height: 100px;
+    background: #1b2a43;
+}
+
+footer p{
+    text-align: center;
+    color: #3f3f3f;
+}
+
+#iconos i{
+    font-size: 26px;
+    padding-right: 10px;
+    color: #f3f3f3;
+}
+
+@media(max-width:1200px){
+
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+    #numeros-local div{
+        padding: 0 30px 0 0;
+
+    }
+
+    #numeros-local div:not(:last-child){
+        border-right: 2px solid #3f3f3f;
+    }
+
+    #numeros-local div:not(:first-child){
+        padding-left: 20px;
+    }
+
+    #numeros-local p{
+        margin: 0;
+    }
+}
+
+@media(max-width:768px){
+    #intro, #equipo{
+        width: 90% !important;
+    }
+
+    .servicio-fila{
+        width: 100%;
+        text-align: center;
+    }
+
+    #equipo p{
+        display: none;
+    }
+
+    #bg-contacto{
+        top: -110px;
+    }
+
+    #contenedor-formulario{
+        
+        left: 5%;
+    
+    }
+}
+
+@media(max-width:576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
